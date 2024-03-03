@@ -1,0 +1,14 @@
+# CMakeFiles.txt inside "USBHost" folder by rup
+cmake_minimum_required(VERSION 3.5)
+idf_component_register(SRCS "src/adk.cpp"
+                            "src/hid2.cpp"
+                            "src/hidboot.cpp"
+                            "src/KeyboardController.cpp"
+                            "src/MouseController.cpp"
+                            "src/parsetools.cpp"
+                            "src/Usb.cpp"
+                    INCLUDE_DIRS "src/."
+                    REQUIRES "arduino" # Library requires Arduino
+                    )
+
+project(USBHost)
